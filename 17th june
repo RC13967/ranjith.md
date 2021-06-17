@@ -4,7 +4,7 @@ var obj = [
     { person: "Name 2", age: "5", company: "GUVI geek" },
     { person: "Name 3", age: "8", company: "GUVI geek network" },
   ]
-  for ( var i of obj)
+  for ( const i of obj)
   {
       for (var j in i)
       {
