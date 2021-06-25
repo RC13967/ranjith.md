@@ -1,0 +1,15 @@
+class movie {
+  constructor({title,studio,rating="pg"}) {
+    this.title = title;
+    this.studio = studio;
+    this.rating=rating;
+  }
+
+    }
+var p = new movie({title:"baahubali",studio:"Annapurna",rating:"pg13r"});
+console.log(p.rating);
+
+
+  
+  
+ 
