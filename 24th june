@@ -1,5 +1,6 @@
+a)...............................................................................................................
 class movie {
-  constructor({title,studio,rating="pg"}) {
+  constructor({title,studio,rating}) {
     this.title = title;
     this.studio = studio;
     this.rating=rating;
@@ -8,8 +9,27 @@ class movie {
     }
 var p = new movie({title:"baahubali",studio:"Annapurna",rating:"pg13r"});
 console.log(p.rating);
+b)...............................................default pg rating..........................................................................
+  class movie {
+  constructor({title,studio,rating="pg"}) {
+    this.title = title;
+    this.studio = studio;
+    this.rating=rating;
+  }
 
+    }
+var p = new movie({title:"baahubali",studio:"Annapurna",rating:"pg13r"});
+console.log(p.rating)
+d)..............................................................................................................................................
+  class movie {
+  constructor({title,studio,rating}) {
+    this.title = title;
+    this.studio = studio;
+    this.rating=rating;
+  }
 
-  
-  
+    }
+var p = new movie({title:"Casino Royale",studio:"Eon Productions",rating:"PG13"});
+console.log(p.rating);
+ c)......................................................................................................................................................
  
