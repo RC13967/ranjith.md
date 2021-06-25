@@ -33,3 +33,22 @@ var p = new movie({title:"Casino Royale",studio:"Eon Productions",rating:"PG13"}
 console.log(p.rating);
  c)......................................................................................................................................................
  
+ 
+ 
+ 
+ 
+ .....................persons..........................................................................................................................
+ class person {
+  constructor({namee,father,mother,age,gender,email,mobile}){
+ this.namee=namee;
+ this.father=father;
+ this.mother=mother;
+ this.age=age;
+this.gender=gender;
+this.email=email
+this.mobile=mobile
+  }
+}
+var p = new person({namee:"rahul",father:"ragiv",mother:"sonia",age:"40",gender:"male",email:"rahul@gmail.com",mobile:"9876543210"});
+console.log(p)
+ 
