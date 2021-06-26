@@ -34,3 +34,16 @@ xhr.onload = function () {
  });
 }
 xhr.send();
+4)------------------------------------------------------------------------------------
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+ var t= data.map(function(x) {
+   return x.population;
+ }).reduce(function(y,z) {
+   return y+z;
+ },0);
+ console.log(t);
+}
+xhr.send();
