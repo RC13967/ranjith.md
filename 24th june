@@ -69,3 +69,15 @@ this.mobile=mobile
 var p = new person({namee:"rahul",father:"ragiv",mother:"sonia",age:"40",gender:"male",email:"rahul@gmail.com",mobile:"9876543210"});
 console.log(p)
  
+4)........................uber......................................................................................................... 
+class uber {
+  constructor(distance,time,priceperdist,pricepertime ){
+    this.distance = distance;
+    this.time = time
+    this.pricepedist = priceperdist
+    this.pricepertime=pricepertime
+    this.total = (distance*priceperdist) + (time*pricepertime); 
+  }
+}
+var p= new uber(12,15,5,1.5)
+console.log(p.total)
