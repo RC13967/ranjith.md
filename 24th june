@@ -8,7 +8,7 @@ class movie {
   }
 
     }
-var p = new movie(baahubali","Annapurna","pg13r"});
+var p = new movie(baahubali","Annapurna","pg13r");
 console.log(p.rating);
  b)...............................................default pg rating..........................................................................
   class movie {
@@ -19,7 +19,7 @@ console.log(p.rating);
   }
 
     }
-var p = new movie("baahubali","Annapurna"});
+var p = new movie("baahubali","Annapurna");
 console.log(p.rating)
 
  c)........................................................................ 
