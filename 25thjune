@@ -12,3 +12,16 @@ xhr.onload = function () {
 }
 xhr.send();
 2)----------------------------------------------------------------------------------
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+ var t= data.filter(function(x) {
+   return x.population < 200000;
+ }).map(function(y) {
+   return y.name;
+ });
+ console.log(t);
+}
+xhr.send();
+3)-----------------------------------------------------------------------------------
