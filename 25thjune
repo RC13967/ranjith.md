@@ -47,3 +47,19 @@ xhr.onload = function () {
  console.log(t);
 }
 xhr.send();
+5)-------------------------------------------------------------------------------------
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  var arr = []
+   var t= data.forEach((x) => {
+     x.currencies.forEach((el) =>{ 
+     if(el.code =="USD"){
+     arr.push(x.name)}
+     })
+     })
+  
+  console.log(arr);
+}
+xhr.send();
