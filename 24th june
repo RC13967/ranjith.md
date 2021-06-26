@@ -41,7 +41,7 @@ console.log(p.rating)
   }
 
     }
-var p = new movie("Casino Royale","Eon Productions","PG13"});
+var p = new movie("Casino Royale","Eon Productions","PG13");
 console.log(p.rating);
 
 2)..........................circle.......................... 
