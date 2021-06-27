@@ -23,15 +23,30 @@ var p = new movie("baahubali","Annapurna");
 console.log(p.rating)
 
  c)........................................................................ 
-
-
-
-
-
-
-
-
-
+arr = [];
+class movie {
+    constructor(title,studio,rating) {
+      this.title = title;
+      this.studio = studio;
+      this.rating=rating;
+    }
+    
+    }
+    function getpg(objs)
+    {
+        for(var el of objs){
+        if(el.rating=="pg")
+    arr.push(el.title);}
+    return arr
+    }
+  
+  var p1 = new movie("Casino Royale","Eon Productions","pg1");
+  var p2 = new movie("Casino Royale1","Eon Productions1","pg2");
+  var p3 = new movie("Casino Royale2","Eon Productions2","pg");
+  var p4 = new movie("Casino Royale3","Eon Productions3","pg3");
+  var p5 = new movie("Casino Royale4","Eon Productions4","pg");
+var p =[p1,p2,p3,p4,p5];
+  console.log(getpg(p));
  d)..............................................................................................................................................
   class movie {
   constructor(title,studio,rating) {
