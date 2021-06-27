@@ -1,3 +1,111 @@
+//////////////////Guvi geek//////////////////////////////
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+" "+lname;
+alert( admin )
+//////////////////////////////hello Guvi geek////////////////
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+" "+lname;
+alert( `hello ${name}` )
+//////////////////////////////////alert sum of two numbers//////////////////////
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(+a + +b);
+/////////////////////////////////////code is blasted//////////////////////////
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+/////////////////////////////////////diffused/////////////////////////
+var a = "2" < "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+/////////////////////////////how to get success///////////////////
+let a = prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+%%%%%press cancel to get success%%%%%%%%
+/////////////////////////How to get the correct score in console./////////////////////
+let value = prompt('How many runs you scored in this ball');
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+///////////////////////////Fix the code to welcome the Employee/////////////////////
+
+
+
+
+
+
+
+//////////////////////////////////Fix the code to welcome the boss//////////////////
+// You cant change the value of the msg
+let message;
+if (null || 2 || undefined )
+{
+  message = "welcome boss";
+}
+else
+{
+  message = "Go away";
+}
+  console.log(message);
+///////////////////Fix the code to welcome the boss////////////////////////////
+let message;
+let lock;
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+//////////////////////Fix the code to welcome the boss/////////////////////////////
+let message;
+let lock;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+/////////////////////Change the code to print/////////////////////////////////
+
+
+
+
+
 \\\\\\\\\\\Output: 1234567891011\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var new_string = "";
