@@ -118,4 +118,14 @@ for (var i = 0; i < numsArr.length; i++) {
 }
 }
 console.log(sum_odd);
-console.log(sum_even);
+console.log(sum_even); 
+////////////////////// largest of three./////////////
+aa = (f,s,t) => {
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
