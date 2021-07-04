@@ -223,6 +223,27 @@ var ar2 = getPositives(ar);
 console.log(ar2);
 /////////////////////////////////
 Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
+function powersOfTwo(n){
+  var res="";
+  for(i=0;i<=n;i++)
+  res+=2**i+","
+  console.log(res.slice(0,res.length-1))
+}
+powersOfTwo(2)
+///////////////////////////////////
+Find the maximum number in an array of numbers
+function findMax(ar)
+{
+  var res=ar[0]
+for(el of ar){
+if(el>res)
+res=el}
+return res
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log("Max: ", max);
+//////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
