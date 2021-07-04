@@ -1,1 +1,100 @@
-
+Declare four variables without assigning values and print them in console
+var a,b,c,d;
+console.log(a,b,c,d)
+//////
+How to get value of the variable myvar as output
+var myvar= 1;
+console.log(myvar);
+////////
+ Declare variables to store your first name, last name, marital status, country and age in multiple lines
+ var firstname="guvi";
+var lastname="geek";
+var age="7";
+var status="alone";
+var country="in";
+///////
+ Declare variables to store your first name, last name, marital status, country and age in a single line
+ var firstname="guvi",lastname="geek",age="7",status="alone",country="in";
+ //////
+ Declare variables and assign string, boolean, undefined and null data types
+var a="string",b=true,c,d=null
+//////////
+Convert the string to integer
+var str = "25";
+console.log(typeof(parseInt(str)))
+console.log(typeof(+(str)))
+console.log(typeof(Number(str)))
+//////////
+Square of a number
+var num=25;
+console.log(num**2)
+/////////
+Swapping 2 numbers
+var a=2,b=3;
+[a,b]=[b,a]
+console.log(a,b)
+///////////
+var a=2,b=3,c=4
+console.log(a+b+c)
+//////////
+Celsius to Fahrenheit conversion
+c=100;
+f=(c/100)*180+32
+console.log(f)
+//////////
+Meter to miles
+metres=100;
+miles=metres/1609.344;
+console.log(miles);
+//////////
+Pounds to kg
+var pounds=100;
+kg=0.453592*pounds;
+console.log(kg)
+/////////
+Calculate Batting Average
+var matches=100;
+var score=4500;
+var battingavg=score/matches;
+console.log(battingavg)
+///////////
+Calculate five test scores and print their average
+var a=10+100+120+125+56;
+console.log(a/5);
+/////////
+Power of any number x ^ y.
+var x=32;
+var y=5;
+console.log(x**y);
+////////
+Calculate Simple Interest
+var p=100,t=2,r=10;
+var i =(p*t*r/100);
+console.log(i)
+///////
+Calculate area of an equilateral triangle
+var a=6;
+var area = (Math.sqrt(3)*a*a/4)
+console.log(area)
+//////
+Area Of Isosceles Triangle
+var eqsides=3;
+var otherside=4;
+var height = Math.sqrt(eqsides*eqsides+(otherside*otherside)/4);
+var area = 0.5*otherside*height;
+console.log(area)
+/////////
+Volume Of Sphere
+var r= 10;
+var vol = 4*Math.PI*r*r*r/3;
+console.log(vol)
+///////
+Volume Of Prism
+var l=10,b=11,h=12;
+console.log(l*b*h)
+///////
+var basearea=12;
+var height=10;
+var vol = basearea*height;
+console.log(vol)
+////////
