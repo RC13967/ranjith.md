@@ -196,7 +196,33 @@ function removeProperty(obj, key){
  var obj = {mykey: "value",yourkey:"novalue"};
   removeProperty(obj,"mykey")
   ////////////////////////////////
-  
+  var arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var arr2 = function countPositivesSumNegatives(arr) {
+ var count=0;
+ var sum=0;
+ for(el of arr){
+ if(el>0)
+ count+=1
+ else sum+=el}
+console.log(count)
+console.log(sum)
+}
+arr2(arr)
+///////////////////////////////////
+Create a function that receives an array of numbers and returns an array containing only the positive numbers
+function getPositives(ar)
+{
+  var a=[];
+ for(el of ar){
+ if(el>0)
+ a.push(el)}
+ return a
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = getPositives(ar);
+console.log(ar2);
+/////////////////////////////////
+Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
