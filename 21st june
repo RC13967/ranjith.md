@@ -232,19 +232,102 @@ function powersOfTwo(n){
 powersOfTwo(2)
 ///////////////////////////////////
 Find the maximum number in an array of numbers
+
 function findMax(ar)
 {
-  var res=ar[0]
-for(el of ar){
-if(el>res)
-res=el}
-return res
+  var res= ar.reduce(function (a,b) {
+    return Math.max(a,b);
+  })
+  return res;
 }
 var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var max = findMax(ar);
 console.log("Max: ", max);
 //////////////////////////////////////
+Print the first 100 prime numbers
+printPrimes(100);
+// Function prints the first nPrimes numbers
+function printPrimes(nPrimes)
+{
+ var n = 0;
+ var i = 2;
+ 
+ while(n < nPrimes)
+ {
+ if (isPrime(i))
+ {
+ console.log(n,"->", i);
+ n++;
+ }
+ 
+ i++;
+ }
+}
+// Returns true if a number is prime
+function isPrime(n)
+{
+ for(i=2;i<n;i++)
+ if(n%i==0)
+ return false
+ return true
+}
+//////////////////////////////////////////
+Create a function that will return in an array the first “nPrimes” prime numbers greater than a particular number “startAt”
+getPrimes(10, 100)
+function getPrimes(nPrimes, startAt)
+{
+  var num=0;
+  var i=startAt+1;
+while(num<nPrimes){
+ if(isPrime(i)){
+ console.log(i);
+num++; 
+}
+ i++;
+}
 
+}
+// Returns true if a number is prime
+function isPrime(n)
+{
+ for(j=2;j<n;j++)
+ if(n%j==0)
+ return false
+ return true
+}
+/////////////////////////////////////
+Reverse a string
+var s = reverseString("JavaScript");
+console.log(s);
+function reverseString(s)
+{
+return s.split("").reverse().join("");
+}
+//////////////////////////////////////
+Create a function that will merge two arrays and return the result as a new array
+var ar1 = [1, 2, 3];
+var ar2 = [4, 5, 6];
+var ar = mergeArrays(ar1, ar2);
+console.log(ar);
+function mergeArrays(ar1, ar2)
+{
+ var result = [];
+//this will add the first array to the result array
+for(let el of ar1)
+ {
+ result.push(el);
+ }
+ 
+ for(let el of ar2)
+ {
+ result.push(el);
+ }
+ 
+ 
+ return result;
+}
+/////////////////////////////////
+Calculate the sum of numbers received in a comma delimited string
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //odd numbers in array
