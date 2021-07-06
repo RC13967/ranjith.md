@@ -298,4 +298,118 @@ for(el of friends1){
   if(str == "a"){
   console.log(el);
   break;}}}
-//////////////////////))
+//////////////////////
+Find the avg length of all the friends names.
+friends1 = ["Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+    var sum=0;
+    for(el of friends1){
+        sum+=el.length
+    }
+    var avg =sum/friends1.length ;
+    console.log(avg);
+    ////////////////
+    Find the names and return the list starting with letter M.
+    friends1 = ["Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+   var res = friends1.filter((el)=>{
+return el[0]=="M"
+    })
+    console.log(res);
+    /////////////////
+     Find the name with max characters and return the name.
+    friends1 = ["Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+   max=""
+    for(el of friends1){
+if (el.length>max.length)
+max=el
+    }
+    console.log(max)
+    /////////////////
+    Find the name with min characters and return the name
+    friends1 = ["Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+    min=friends1[0]
+    for(el of friends1){
+if (el.length<min.length)
+min=el
+    }
+    for(el of friends1){
+        if(el.length==min.length)
+        console.log(el)
+    }
+   ///////////////////
+  Find the average in the array below.
+Make sure you add only the numbers and do avg.
+const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
+const friendsInfo = [6, 12, 'Mari', 1, true, 'Munnabai', '200', 'CaptianAmerica', 8, 10];
+var res=friendsInfo.filter((el)=>{
+    return typeof(el)=="number"}).reduce(function (sum,num){
+        return sum+num;
+    },0)
+console.log(res)
+/////////////////
+Print the contents of the input variable
+var input = [
+    ['0001', 'Roman Alamsyah', 'Bandar Lampung', '21/05/1989', 'Membaca'],
+    ['0002', 'Dika Sembiring', 'Medan', '10/10/1992', 'Bermain Gitar'],
+    ['0003', 'Winona', 'Ambon', '25/12/1965', 'Memasak'],
+    ['0004', 'Bintang Senjaya', 'Martapura', '6/4/1970', 'Berkebun']
+    ]
+    function dataHandling(input){
+    for (var i = 0; i < input.length; i++) {
+    console.log(input[i])
+    }
+    }
+    dataHandling(input);
+    ///////////
+    What the output
+myobject = {1:one,”11":1,”name”:”arun”}
+console.log(myobject.11); 
+console.log(myobject.name);
+///////////
+What the output?
+myobject = {1:one,"11":1,"name":"arun"}
+console.log(myobject.11); 
+console.log(myobject.name);
+OUTPUT:
+24june.js:2 Uncaught SyntaxError: missing ) after argument list
+///////////
+Add a new key value pair to myobject
+key : ten
+value : ten
+myobject = {1:"one","11":1,"name":"arun"}
+myobject["ten"]="ten"
+console.log(myobject);
+////////////
+Write out an object literal to represent the data below.
+var obj = {name:"Guvi", subsidary:"Geek", age:6, street:"IIT-M RP",location:"Chennai"}
+////////////
+How would you represent the following data using a combination of object literals and arrays
+/////////
+var obj = [{a:"Guvi",b: "Geek", c:6, d:"IIT-M RP,Chennai"},
+{a:"Amazon", b:"Inc",c: 31, d:"SP Infocity", e:"Chennai"},
+{a:"Google", b:"Alphabet",c: 34,d: "Amphitheater Parkway",e: "MountainView"},
+{a:"Tesla",b:" Inc" , c:32,d: "333 Santana Row",e:"San Jose"}]
+console.log(obj)
