@@ -1,3 +1,12 @@
+how to compare two JSON have the same properties without order?
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+for(el1 in obj1){
+  if(obj2.hasOwnProperty(el1)){
+        console.log(el1)
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Declare four variables without assigning values and print them in console
 var a,b,c,d;
 console.log(a,b,c,d)
