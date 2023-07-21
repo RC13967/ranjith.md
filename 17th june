@@ -1,56 +1,56 @@
 //for of
-var obj = [
+var arr = [
     { person: "Name 1", age: "2", company: "GUVI" },
     { person: "Name 2", age: "5", company: "GUVI geek" },
     { person: "Name 3", age: "8", company: "GUVI geek network" },
   ]
-  for ( const i of obj)
+  for ( const obj of arr)
   {
-      for (var j in i)
+      for (var key in obj)
       {
-      console.log(j + ":" + i[j])
+      console.log(key + ":" + obj[key])
       }  
     }
     
 //for in
-var obj = [
+var arr = [
     { person: "Name 1", age: "2", company: "GUVI" },
     { person: "Name 2", age: "5", company: "GUVI geek" },
     { person: "Name 3", age: "8", company: "GUVI geek network" },
   ]
-  for ( var i in obj)
+  for ( var ind in arr)
   {
-      for (j in obj[i])
+      for (key in arr[ind])
       {
-      console.log(j + ":" + obj[i][j])
+      console.log(key + ":" + arr[ind][key])
       }  
     }
     
 //for
-    var obj = [
+    var arr = [
     { person: "Name 1", age: "2", company: "GUVI" },
     { person: "Name 2", age: "5", company: "GUVI geek" },
     { person: "Name 3", age: "8", company: "GUVI geek network" }
   ]
-  for ( i=0;i<obj.length;i++)
+  for ( i=0;i<arr.length;i++)
   {
-      for (j in obj[i])
+      for (key in arr[i])
       {
-      console.log(j + ":" + obj[i][j])
+      console.log(key + ":" + arr[i][key])
       }  
     }
     
 //for each
-var obj = [
+var arr = [
     { person: "Name 1", age: "2", company: "GUVI" },
     { person: "Name 2", age: "5", company: "GUVI geek" },
     { person: "Name 3", age: "8", company: "GUVI geek network" }
   ]
- obj.forEach(function(x)
+ arr.forEach(function(obj)
   
 {
-    for(i in x)
-    console.log(i + ":"+ x[i])
+    for(key in obj)
+    console.log(key + ":"+ obj[key])
 })
       
 //country flags
